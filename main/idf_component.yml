@@ -1,0 +1,15 @@
+dependencies:
+  esp32_p4_function_ev_board:
+    rules:
+    - if: target in [esp32p4]
+  espressif/esp32_s3_lcd_ev_board:
+    rules:
+    - if: target in [esp32s3]
+    version: ^2.*
+  idf: '>=5.1'
+  usb_device_uac:
+    version: 1.*
+targets:
+- esp32s3
+- esp32p4
+version: 0.2.0
